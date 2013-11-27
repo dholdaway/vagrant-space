@@ -10,8 +10,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :path => "bootstrap.sh"
   config.ssh.private_key_path = "~/.ssh/id_rsa"
   config.vm.provider :rackspace do |os|
-    os.username = "darrenholdaway"
-    os.api_key = "cf7da018a049872a5699e944dd0335e3"
+    os.username = ""
+    os.api_key = ""
     os.flavor = /4GB/
     os.image = /Ubuntu 12.04/ 
     #os.keypair_name = ""
