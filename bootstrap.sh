@@ -114,6 +114,8 @@ a2ensite $3
 
 a2enmod rewrite
 
+a2enmod mod_reqtimeout
+
 # reload Apache2
 
 service apache2 restart
