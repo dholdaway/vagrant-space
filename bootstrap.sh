@@ -187,7 +187,8 @@ echo _ >> installed_versions.txt
 echo _ >> installed_versions.txt
 echo "PHP" >> installed_versions.txt
 php -v >> installed_versions.txt
-echo _ >> installed_versions.txt
+echo - >> installed_versions.txt
+echo "nodejs" >> installed_versions.txt
 nodejs -v >> installed_versions.txt
 
 apt-get clean
