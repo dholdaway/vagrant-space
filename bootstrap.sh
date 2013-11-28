@@ -148,6 +148,18 @@ gem install compass
 
 gem install breakpoint
 
+deb http://apt.newrelic.com/debian/ newrelic non-free
+
+wget -O- https://download.newrelic.com/548C16BF.gpg | apt-key add -
+
+apt-get update
+
+apt-get install newrelic-sysmond
+
+nrsysmond-config --set license_key=
+
+/etc/init.d/newrelic-sysmond start
+
 #install Grunt
 
 npm install -g grunt-cli
